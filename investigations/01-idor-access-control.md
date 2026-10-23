@@ -93,3 +93,13 @@ Verify that:
 The test demonstrated an IDOR-style access-control weakness. Changing the account identifier caused the application to return another user's account information without the expected authorisation check.
 
 The investigation documented the reproduction method, observed impact, remediation recommendations and retest criteria. It demonstrates a structured approach to validating a web application vulnerability and communicating its significance.
+
+## 11. Evidence
+
+### Evidence 01 — IDOR Access-Control Test
+
+[View sanitised assessment screenshot](../evidence/01-idor-access-control.png)
+
+The screenshot shows the modified account identifier and the resulting account page in the authorised training lab. The API key has been redacted to prevent disclosure of sensitive information.
+
+The screenshot supports the finding described in this report. It should be considered alongside the methodology, observed behaviour, impact assessment and remediation recommendations.
