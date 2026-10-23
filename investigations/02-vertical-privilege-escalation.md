@@ -99,3 +99,19 @@ After remediation:
 The test demonstrated vertical privilege escalation through a user-controlled role field. The application accepted the modified request, allowed the tester to access administrative functionality, and permitted completion of the lab's intended task.
 
 The investigation demonstrates the use of Burp Suite Repeater to modify and replay HTTP requests, validate a security weakness, assess impact and formulate actionable remediation recommendations.
+
+## 11. Evidence
+
+### Evidence 02 — Role Modification Request
+
+[View Burp Suite Repeater evidence](../evidence/02-roleid-repeater.png)
+
+This screenshot supports the observation that the profile-update request included a user-supplied `roleid` value of `2` and that the application accepted the change. Sensitive session information must be redacted.
+
+### Evidence 03 — Administrative Access
+
+[View administrator-panel evidence](../evidence/03-admin-panel-access.png)
+
+This screenshot supports the impact assessment by showing that the administrator panel was accessible after the role change in the authorised training lab.
+
+The screenshots should be interpreted alongside the methodology, findings, limitations and remediation recommendations in this report.
