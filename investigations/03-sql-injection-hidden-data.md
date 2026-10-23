@@ -99,3 +99,19 @@ After remediation:
 The assessment demonstrated SQL injection behaviour in a product-category filter. Modifying the category request caused the application to display all products and completed the lab challenge.
 
 The investigation documented the test method, observed outcome, potential impact and remediation recommendations. It demonstrates a practical approach to testing user-controlled input and reporting a validated vulnerability within an authorised environment.
+
+## 11. Evidence
+
+### Evidence 04 — Successful SQL Injection Test
+
+[View sanitised lab result](../evidence/04-sql-injection-hidden-products.png)
+
+This screenshot shows the result of modifying the product-category parameter in the authorised training lab, including the resulting product listing and, where visible, the lab completion status.
+
+### Evidence 05 — Modified HTTP Request
+
+[View sanitised request evidence](../evidence/05-sql-injection-request.png)
+
+This screenshot shows the modified category parameter used during the test. It supports the methodology described in this report.
+
+All published evidence must exclude session cookies, authentication tokens and other sensitive values. The screenshots demonstrate behaviour in the training environment and do not establish that other applications are vulnerable.
